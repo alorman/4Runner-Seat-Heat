@@ -1,5 +1,8 @@
 # 4Runner Seat Heat
 
+#### Note
+When cloning this repo, make sure to run `git clone --recurse-submodules` or similar, to grab the submodules. [Sourcetree](https://www.sourcetreeapp.com/) is an excellent GUI based git client that supports submodules.
+
 ## Why This Project?
 This project is to add heated seats to my 06 4Runner, using the OEM switch (which are lovely) and generic heated seat pads. I had planned to replace the covers on my seats anyways, so adding heat pads was a low-cost upgrade.
 There has been a fair amount of soul-searching about this in 4Runner forums over the years, so I thought I'd share what I learned.
@@ -116,7 +119,7 @@ In order to accommodate the heated seat swtiches, the center console cover needs
 The center console (in grey) is: Toyota part number 58822-35020-B0
 
 This is a representative photo (in the correct color) of the above part number:
-![](images/console.jpg)
+![](images/console.jpg)	
 
 
 
