@@ -1,7 +1,9 @@
 # 4Runner Seat Heat
 
 #### Note
-When cloning this repo, make sure to run `git clone --recurse-submodules` or similar, to grab the submodules. [Sourcetree](https://www.sourcetreeapp.com/) is an excellent GUI based git client that supports submodules.
+When cloning this repo, make sure to run `git clone --recurse-submodules` or similar, to grab the submodules.
+If you use the `Download ZIP` button, above, you'll need to also download the [code](https://github.com/alorman/4Runner-Seat-Heat-Code/tree/a5bec98446b3f89398f24f5936632363a07d24d4) and [PCB](https://github.com/alorman/4runner-Seat-Heat-PCB/tree/717aa7471c5e140965f73b4c441a7ce4ab35f1fb).  
+[Sourcetree](https://www.sourcetreeapp.com/) is an excellent GUI based git client that supports submodules.
 
 ## Why This Project?
 This project is to add heated seats to my 06 4Runner, using the OEM switch (which are lovely) and generic heated seat pads. I had planned to replace the covers on my seats anyways, so adding heat pads was a low-cost upgrade.
