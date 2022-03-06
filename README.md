@@ -61,6 +61,9 @@ The backlights aren't featured in the above diagrams and have to be sourced from
 
 ![](images/illum-diagram.svg)
 
+and more importantly:
+![](images/heat-illum-diagram.jpg)
+
 Toyota specifies the pin numbers as above, I mapped these numberings onto the switches themselves to have the following:
 ![](images/switch-numbering.jpg)
 
@@ -86,12 +89,14 @@ I used a Fluke 177 in resistance mode with a switch I bought on ebay, so values 
 In the PCB, I opted to go with a few circuits to allow these values to scale nicely. 
 - A voltage divider and analog pin that measures the 12VDC circuit in the car (this uses 1% resistors to allow for greater accuracy
 - Another voltage divider and analog pin for each side that measures the switch position.
-- Another voltage divider and analog pin to look for status about the vehicle lights (either on or off, mainly)
+- ~~Another voltage divider and analog pin to look for status about the vehicle lights (either on or off, mainly)~~ this feature is depricated with rev02 of the PCB.
 
 With a bit of math we can always scale the resistance reading to be a percentage of the 12VDC reading, so even as our alternator voltage drifts a bit (it will), our intended output stays the same.
 
 ### Switch Backlights
-In the PCB I've made, I chose to drive the backlights directly, with input signaling being read from another analog input pin, although since they're wheatlamps, I can certainly dim them with PWM.
+~~In the PCB I've made, I chose to drive the backlights directly, with input signaling being read from another analog input pin, although since they're wheatlamps, I can certainly dim them with PWM.~~
+
+In PCB rev02 I realized I hadn't quite fully understood how the backlight dimming worked. In short: it's switched high-side and dimmed low-side, so the easiest path was to allow the backlights to be directly driven by the car's backlight system rather than driving them through a mosfet. 
 
 Inside each unit there are two lights, one (a wheatlamp) for the backlight and the other (an LED with load resistor) for the "Heat On" function. See:
 The wheatlamp:
@@ -113,6 +118,7 @@ Some resellers will sell a bulb with flying leads. I was looking for the entire 
 |               | JKL 39-20-5 | Blue       |
 |               | JKL 39-20-6 | Blue-White |
 |               | JKL 39-20-7 | White      |
+
 
 ## New Center Console
 
