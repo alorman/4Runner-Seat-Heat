@@ -4,6 +4,6 @@
 [submodule "Code"]
 	path = Code
 	url = https://github.com/alorman/4Runner-Seat-Heat-Code.git
-[submodule "4Runner-Seat-Heat-Case"]
-	path = 4Runner-Seat-Heat-Case
+[submodule "Case"]
+	path = Case
 	url = https://github.com/alorman/4Runner-Seat-Heat-Case.git
