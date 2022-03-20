@@ -6,4 +6,4 @@
 	url = https://github.com/alorman/4Runner-Seat-Heat-Case.git
 [submodule "PCB"]
 	path = PCB
-	url = https://github.com/alorman/4runner-Seat-Heat-PCB
+	url = https://github.com/alorman/4runner-Seat-Heat-PCB.git
