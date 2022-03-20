@@ -25,10 +25,10 @@ They also have individually sided plugs.
 | Left Seat Switch  | 84751-35100        | 90980-10933              |
 | Right Seat Switch | 84751-35090        | 90980-10964              |
 
-There does seem to be someone selling these on [Alibab](https://www.alibaba.com/product-detail/seat-heater-switch-with-wire-harness_60582627051.html) if anyone orders one, let me know.
+There does seem to be someone selling these on [Alibaba](https://www.alibaba.com/product-detail/seat-heater-switch-with-wire-harness_60582627051.html) if anyone orders one, let me know.
 
 ### Switch Plug Connectors
-Thanks to both the Toyota4Runner forums and IH8Mud forums for the [following plug identification](https://www.ih8mud.com/tech/pdf/WireHarnessRepairManual/malenonw.pdf)
+Thanks to both the Toyota4Runner forums and IH8Mud forums for the [following plug identification](https://www.ih8mud.com/tech/pdf/WireHarnessRepairManual/malenonw.pdf). It that link is dead [I hosted a copy](manuals/wire-harness-repair-manual-MALE.pdf)
 
 ![](images/plug-breakdown.png)
 
@@ -53,7 +53,7 @@ When you take apart the switch you can see the following:
 and
 ![](images/disassembly_2.jpg)
 
-The Toyota wiring diagram (which can very likely be found on helpful forums) shows how the switches work in fairly clear detail.
+The Toyota wiring diagram (which can very likely be found on helpful forums and is impractically large to host in full here) shows how the switches work in fairly clear detail.
 
 ![](images/wiring-diagrams.svg)
 

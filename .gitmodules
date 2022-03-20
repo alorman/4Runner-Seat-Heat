@@ -1,9 +1,9 @@
-[submodule "PCB"]
-	path = PCB
-	url = https://github.com/alorman/4runner-Seat-Heat-PCB.git
 [submodule "Code"]
 	path = Code
 	url = https://github.com/alorman/4Runner-Seat-Heat-Code.git
 [submodule "Case"]
 	path = Case
 	url = https://github.com/alorman/4Runner-Seat-Heat-Case.git
+[submodule "PCB"]
+	path = PCB
+	url = https://github.com/alorman/4runner-Seat-Heat-PCB
