@@ -103,6 +103,8 @@ In PCB rev02 I realized I hadn't quite fully understood how the backlight dimmin
 
 ![](images/backlight-circuit.png)
 
+![](images/IMG_2019.gif)  
+
 Inside each unit there are two lights, one (a wheatlamp) for the backlight and the other (an LED with load resistor) for the "Heat On" function. See:
 The wheatlamp:
 ![](images/wheatlamp.jpg)
@@ -110,6 +112,7 @@ The wheatlamp:
 The LED:
 ![](images/LED.jpg)
 
+## Replacement Bulbs
 One of the ebay units I purchased had a dead backlight, so I found the replacement bulbs.
 
 Some resellers will sell a bulb with flying leads. I was looking for the entire assembly (which is used in a few other places in the 4Runners, mainly behind the dash).
