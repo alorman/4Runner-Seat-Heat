@@ -4,9 +4,9 @@
 When cloning this repo, make sure to run `git clone --recurse-submodules` or similar, to grab the submodules.
 
 ## Links
-[**3d Printed Case**](https://github.com/alorman/4Runner-Seat-Heat-Case/tree/main)
-[**Code to Run on Teensy**](https://github.com/alorman/4Runner-Seat-Heat-Code/tree/main)
-[**PCB**](https://github.com/alorman/4runner-Seat-Heat-PCB/tree/main)
+[**3d Printed Case**](https://github.com/alorman/4Runner-Seat-Heat-Case/tree/main)  
+[**Code to Run on Teensy**](https://github.com/alorman/4Runner-Seat-Heat-Code/tree/main)  
+[**PCB**](https://github.com/alorman/4runner-Seat-Heat-PCB/tree/main)  
 
 ## Why This Project?
 This project is to add heated seats to my 06 4Runner, using the OEM switch (which are lovely) and generic heated seat pads. I had planned to replace the covers on my seats anyways, so adding heat pads was a low-cost upgrade.
