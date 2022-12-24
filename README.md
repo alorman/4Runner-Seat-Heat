@@ -2,8 +2,11 @@
 
 #### Note
 When cloning this repo, make sure to run `git clone --recurse-submodules` or similar, to grab the submodules.
-If you use the `Download ZIP` button, above, you'll need to also download the [code](https://github.com/alorman/4Runner-Seat-Heat-Code/tree/a5bec98446b3f89398f24f5936632363a07d24d4) and [PCB](https://github.com/alorman/4runner-Seat-Heat-PCB/tree/717aa7471c5e140965f73b4c441a7ce4ab35f1fb).  
-[Sourcetree](https://www.sourcetreeapp.com/) is an excellent GUI based git client that supports submodules.
+
+## Links
+[**3d Printed Case**](https://github.com/alorman/4Runner-Seat-Heat-Case/tree/main)
+[**Code to Run on Teensy**](https://github.com/alorman/4Runner-Seat-Heat-Code/tree/main)
+[**PCB**](https://github.com/alorman/4runner-Seat-Heat-PCB/tree/main)
 
 ## Why This Project?
 This project is to add heated seats to my 06 4Runner, using the OEM switch (which are lovely) and generic heated seat pads. I had planned to replace the covers on my seats anyways, so adding heat pads was a low-cost upgrade.
@@ -69,7 +72,7 @@ Toyota specifies the pin numbers as above, I mapped these numberings onto the sw
 
 After taking apart one of the switches I have, I came up with the following KiCad symbol (see sub-project for complete library of KiCad parts).
 
-![](images/kicad-symbol.jpg)
+![](images/kicad-symbol.png)
 
 We can see from the circuit diagram that the switch is kind enough to drive the "Heater On" light for us, so we don't need to control that one separately, although I guess we could if we wanted (by having another sink-side mosfet on pin 1).
 
@@ -94,9 +97,11 @@ In the PCB, I opted to go with a few circuits to allow these values to scale nic
 With a bit of math we can always scale the resistance reading to be a percentage of the 12VDC reading, so even as our alternator voltage drifts a bit (it will), our intended output stays the same.
 
 ### Switch Backlights
-~~In the PCB I've made, I chose to drive the backlights directly, with input signaling being read from another analog input pin, although since they're wheatlamps, I can certainly dim them with PWM.~~
+~~In this PCB the backlights are driven via the same Green - White/Green circuitry that drives all the gauge backlights. There is an option to drive the backlights directly if desired.~~
 
 In PCB rev02 I realized I hadn't quite fully understood how the backlight dimming worked. In short: it's switched high-side and dimmed low-side, so the easiest path was to allow the backlights to be directly driven by the car's backlight system rather than driving them through a mosfet. 
+
+![](images/backlight-circuit.png)
 
 Inside each unit there are two lights, one (a wheatlamp) for the backlight and the other (an LED with load resistor) for the "Heat On" function. See:
 The wheatlamp:
@@ -124,7 +129,7 @@ Some resellers will sell a bulb with flying leads. I was looking for the entire 
 
 In order to accommodate the heated seat swtiches, the center console cover needs to have the correct cutouts. Mine did not come with this from the factory, so I found another 4Runner that did and traced the part number.
 
-The center console (in grey) is: Toyota part number 58822-35020-B0
+The center console (in grey) is: Toyota part number `58822-35020-B0`
 
 This is a representative photo (in the correct color) of the above part number:
 ![](images/console.jpg)	
