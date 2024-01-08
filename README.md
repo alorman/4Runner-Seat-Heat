@@ -115,18 +115,21 @@ The LED:
 ## Replacement Bulbs
 One of the ebay units I purchased had a dead backlight, so I found the replacement bulbs.
 
+**The bulbs are T1 style incandescent bulbs**
+
 Some resellers will sell a bulb with flying leads. I was looking for the entire assembly (which is used in a few other places in the 4Runners, mainly behind the dash).
 
-| Lamp          | Lens        | Color      |
-|---------------|-------------|------------|
-|**JKL-CNW1-23**| JKL 39-20-1 | Red        |
-|               | JKL 39-20-2 | Orange     |
-|               | JKL 39-20-3 | **Yellow** |
-|               | JKL 39-20-4 | Green      |
-|               | JKL 39-20-5 | Blue       |
-|               | JKL 39-20-6 | Blue-White |
-|               | JKL 39-20-7 | White      |
+| Lamp          | Lens         | Color      |
+|---------------|--------------|------------|
+|**JKL CNW1-23**| JKL 39-02-1A | Red        |
+|               | JKL 39-02-2A | Orange     |
+|               | JKL 39-02-3A | **Yellow** (what we're using here)|
+|               | JKL 39-02-4A | Green      |
+|               | JKL 39-02-5A | Blue       |
+|               | JKL 39-02-6A | Blue-White |
+|               | JKL 39-02-7A | White      |
 
+Replacement bulbs (as opposed to holders) are availble from JKL as part number 23 (note: JKL, please find a more unique part number). Availible from Mouser [here](https://www.mouser.com/ProductDetail/JKL-Components/23?qs=gp8goBkfC5ERjlYH8%2FoU0w%3D%3D)
 
 ## New Center Console
 
