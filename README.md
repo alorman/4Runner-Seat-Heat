@@ -133,13 +133,26 @@ Replacement bulbs (as opposed to holders) are availble from JKL as part number 2
 
 ## New Center Console
 
-In order to accommodate the heated seat swtiches, the center console cover needs to have the correct cutouts. Mine did not come with this from the factory, so I found another 4Runner that did and traced the part number.
+In order to accommodate the heated seat switches, the center console cover needs to have the correct cutouts. Mine did not come with this from the factory, so I found another 4Runner that did and traced the part number.
 
 The center console (in grey) is: Toyota part number `58822-35020-B0`
 
 This is a representative photo (in the correct color) of the above part number:
 ![](images/console.jpg)	
 
+## Seat Heaters
+
+The entire aim of this project was to use commodity seat heaters and the OEM switches. I purchased a pair of seat heaters and included cabling and hardware from eBay similar to [these](https://www.ebay.com/itm/314946346242?hash=item495443dd02:g:S~AAAOSwfXJlk2pL) for around $60. (Link may be dead. Photo below))  
+
+![](images/ebay-seat-heat.jpg)
+
+These come in numerous styles, but the only thing of importance was the heater pads themselves. We won't be using the switches or relays.  
+
+I replaced the my seat covers with leather from the lovely people at [Lseat.com](www.lseat.com).  
+**Pro Tip** Hog rings are the worst. Use aviation snips to cut the hog rings when you take the seat apart then use small zip ties when you put it back together. Future you will thank you.
+
+### Heating Pad Wiring Notes
+My seat heat pads had a strange wiring scheme that took me some time to realize. The pads were wired in some kind of strange series/parallel configuration. I ended up cutting connectors off and rewiring them in parallel to both pads. 
 
 
 
