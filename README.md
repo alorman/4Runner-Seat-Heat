@@ -162,6 +162,12 @@ The main challenge of the board was to compactly conduct the appropriate current
 
 The Teensy is total overkill for this project, but it was easy and I always have a few floating around. It supports my limited programming skills.
 
+## Schematic
+See the [PCB repo](https://github.com/alorman/4runner-Seat-Heat-PCB) for further details
+
+Schematic:
+![](images/schematic.jpg)
+
 ## Code
 See the [Code Repo](https://github.com/alorman/4Runner-Seat-Heat-Code) for full details. 
 
