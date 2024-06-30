@@ -1,0 +1,156 @@
+{
+	"Revision History" : 
+	{
+		"1" : "Initial Commit<@>06/20/24"
+	},
+	"Wire Notes" : "",
+	"Connector Notes" : "",
+	"Contacts" : 
+	{
+		"1" : "#true",
+		"TE-1743655-1" : "#false"
+	},
+	"Part Numbers" : 
+	{
+		"LeftHeater1" : "TE-796859-2#false",
+		"RightHeater1" : "1TE-796859-2#false",
+		"J7" : "TE-284510-6#false",
+		"J2" : "TE-284510-6#false",
+		"LeftHeater" : "1#true",
+		"RightHeater" : "1#true",
+		"Toyota8475135090" : "Toyota-90980-10964#true",
+		"Toyota8475135100" : "Toyota-90980-10933#false",
+		"Vehicle" : "1#true",
+		"J9" : "1#true"
+	},
+	"Connections" : 
+	{
+		"PCB(J9)%1{16}<1>[+12vIGN]#Ignition Switched High Current#==" : 
+		[
+			"Vehicle(Vehicle)%1{16}<1>[12vIGN]##&0.188,0.835,0.784,1.000&@50.000-mm@$0.188,0.835,0.784,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J9)%2{16}<1>[GND]##==" : 
+		[
+			"Vehicle(Vehicle)%2{16}<1>[GND]##&0.000,0.616,0.000,1.000&@50.000-mm@$0.000,0.616,0.000,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J9)%3{16}<1>[Dimmer-GND]##==" : 
+		[
+			"Vehicle(Vehicle)%3{16}<1>[Dimmer-GND]##&1.000,1.000,1.000,1.000&@50.000-mm@$0.000,0.616,0.000,1.000$^false^?,true,true,false?=="
+		],
+		"PCB(LeftHeater1)%1{16}<1>[+12VDC]##==" : 
+		[
+			"Heaters(LeftHeater)%1{16}<TE-1743655-1>[+12VDC]##&1.000,0.000,0.000,1.000&@50.000-mm@$1.000,0.000,0.000,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(LeftHeater1)%2{16}<1>[GND]##==" : 
+		[
+			"Heaters(LeftHeater)%2{16}<TE-1743655-1>[GND]##&0.000,0.000,0.000,1.000&@50.000-mm@$0.000,0.000,0.000,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(RightHeater1)%1{16}<1>[12VDC]##==" : 
+		[
+			"Heaters(RightHeater)%1{16}<TE-1743655-1>[12VDC]##&1.000,0.000,0.000,1.000&@50.000-mm@$1.000,0.000,0.000,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(RightHeater1)%2{16}<1>[GND]##==" : 
+		[
+			"Heaters(RightHeater)%2{16}<TE-1743655-1>[GND]##&0.000,0.000,0.000,1.000&@50.000-mm@$0.000,0.000,0.000,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J7)%1{16}<1>[GND]##==" : 
+		[
+			"Switches(Toyota8475135100)%1{16}<TE-1743655-1>[GND]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J7)%2{16}<1>[LeftPotRead]##==" : 
+		[
+			"Switches(Toyota8475135100)%2{16}<TE-1743655-1>[LeftPotRead]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J7)%3{16}<1>[12vPolfuse]##==" : 
+		[
+			"Switches(Toyota8475135100)%3{16}<TE-1743655-1>[12vPolfuse]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J7)%4{16}<1>[NC]##==" : 
+		[
+			"Switches(Toyota8475135100)%4{16}<TE-1743655-1>[NC]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J7)%5{16}<1>[DimmerGND]##==" : 
+		[
+			"Switches(Toyota8475135100)%5{16}<TE-1743655-1>[DimmerGND]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J7)%6{16}<1>[12vTail]##==" : 
+		[
+			"Switches(Toyota8475135100)%6{16}<TE-1743655-1>[12vTail]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J2)%1{16}<1>[GND]##==" : 
+		[
+			"Switches(Toyota8475135090)%1{16}<1>[GND]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J2)%2{16}<1>[RightPot]##==" : 
+		[
+			"Switches(Toyota8475135090)%2{16}<1>[RightPot]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J2)%3{16}<1>[12vPolyfuse]##==" : 
+		[
+			"Switches(Toyota8475135090)%3{16}<1>[12vPolyfuse]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J2)%4{16}<1>[NC]##==" : 
+		[
+			"Switches(Toyota8475135090)%4{16}<1>[NC]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J2)%5{16}<1>[DimmerGND]##==" : 
+		[
+			"Switches(Toyota8475135090)%5{16}<1>[DimmerGND]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		],
+		"PCB(J2)%6{16}<1>[12vTail]##==" : 
+		[
+			"Switches(Toyota8475135090)%6{16}<1>[12vTail]##&0.447,0.565,0.604,1.000&@50.000-mm@$0.447,0.565,0.604,1.000$^true^?,true,true,false?=="
+		]
+	},
+	"Groups" : 
+	{
+		"PCB" : 
+		[
+			"LeftHeater1-2!0&&$0$#0#?,,0,0,false,false?",
+			"RightHeater1-2!0&&$0$#0#?,,0,0,false,false?",
+			"J7-6!0&&$0$#0#?,,0,0,false,false?",
+			"J2-6!0&&$0$#0#?,,0,0,false,false?",
+			"J9-3!0&&$0$#0#?,,0,0,false,false?"
+		],
+		"Vehicle" : 
+		[
+			"Vehicle-3!0&&$0$#0#?,,0,0,false,false?"
+		],
+		"Switches" : 
+		[
+			"Toyota8475135090-6!0&&$0$#0#?,,0,0,false,false?",
+			"Toyota8475135100-6!0&&$0$#0#?,,0,0,false,false?"
+		],
+		"Heaters" : 
+		[
+			"LeftHeater-2!0&&$0$#0#?,,0,0,false,false?",
+			"RightHeater-2!0&&$0$#0#?,,0,0,false,false?"
+		]
+	},
+	"Title" : "4Runner-Heated-Seat-Wiring",
+	"Settings" : 
+	{
+		"ResponsibleDepartment" : "Engineering",
+		"TechnicalReference" : "TR_50050",
+		"Creator" : "CNB",
+		"Approved" : "CNB",
+		"DocumentType" : "WIRING",
+		"DocumentStatus" : "REVIEW",
+		"Id" : "ID_50300",
+		"Revision" : "A1",
+		"DateOfIssue" : "08/14/2022",
+		"Language" : "EN",
+		"SheetXofY" : "1/1",
+		"DrawTitleBlock" : true,
+		"Company" : "Wirely",
+		"CompanyLogo" : "",
+		"BuildNotes" : "1.Instruction 1\n2.Instruction 2",
+		"Units" : "m",
+		"NodeSep" : 2.0,
+		"RankSep" : 5.0,
+		"CompanyLogoWidth" : 1,
+		"CompanyLogoHeight" : 1
+	}
+}
+<!-- RESOURCES -->
+{}

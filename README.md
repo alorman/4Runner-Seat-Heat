@@ -31,7 +31,7 @@ They also have individually sided plugs.
 There does seem to be someone selling these on [Alibaba](https://www.alibaba.com/product-detail/seat-heater-switch-with-wire-harness_60582627051.html) if anyone orders one, let me know.
 
 ### Switch Plug Connectors
-Thanks to both the Toyota4Runner forums and IH8Mud forums for the [following plug identification](https://www.ih8mud.com/tech/pdf/WireHarnessRepairManual/malenonw.pdf). It that link is dead [I hosted a copy](manuals/wire-harness-repair-manual-MALE.pdf)
+Thanks to both the Toyota4Runner forums and IH8Mud forums for the [following plug identification](https://www.ih8mud.com/tech/pdf/WireHarnessRepairManual/malenonw.pdf). It that link is dead [I hosted a copy](manuals/wire-harness-repair-manual-MALE.pdf) 
 
 ![](images/plug-breakdown.png)
 
@@ -112,6 +112,13 @@ The wheatlamp:
 The LED:
 ![](images/LED.jpg)
 
+## Wiring Harness
+Using the awesome [Wirely Harness Tool](https://wirely-harness.com/) I made a quick harness diagram for the connectors that must be made from the board to the switches, car and heater.
+
+![](wirely-harness/4Runner-Heated-Seat-Wiring.svg)
+
+See the full [JSON Definition](wirely-harness/4Runner-Heated-Seat-Wiring.json)  
+
 ## Replacement Bulbs
 One of the ebay units I purchased had a dead backlight, so I found the replacement bulbs.
 
@@ -129,7 +136,7 @@ Some resellers will sell a bulb with flying leads. I was looking for the entire 
 |               | JKL 39-02-6A | Blue-White |
 |               | JKL 39-02-7A | White      |
 
-Replacement bulbs (as opposed to holders) are availble from JKL as part number 23 (note: JKL, please find a more unique part number). Availible from Mouser [here](https://www.mouser.com/ProductDetail/JKL-Components/23?qs=gp8goBkfC5ERjlYH8%2FoU0w%3D%3D)
+Replacement bulbs (as opposed to holders) are available from JKL as part number 23 (note: JKL, please find a more unique part number). Available from Mouser [here](https://www.mouser.com/ProductDetail/JKL-Components/23?qs=gp8goBkfC5ERjlYH8%2FoU0w%3D%3D)
 
 ## New Center Console
 
@@ -139,6 +146,32 @@ The center console (in grey) is: Toyota part number `58822-35020-B0`
 
 This is a representative photo (in the correct color) of the above part number:
 ![](images/console.jpg)	
+
+## PCB
+See the [PCB repo](https://github.com/alorman/4runner-Seat-Heat-PCB) for further details  
+
+I designed the PCB in KiCad to accomade these signals. 
+
+Front:
+![](https://github.com/alorman/4runner-Seat-Heat-PCB/blob/main/images/4runner-seat-heat-front.png)  
+
+Back:
+![](https://raw.githubusercontent.com/alorman/4runner-Seat-Heat-PCB/main/images/4runner-seat-heat-back.png)
+
+The main challenge of the board was to compactly conduct the appropriate current (~10A DC) per channel. This was done with heavy duty SMT MOSFETs that accept logic-level inputs from the Teensy. 
+
+The Teensy is total overkill for this project, but it was easy and I always have a few floating around. It supports my limited programming skills.
+
+## Code
+See the [Code Repo](https://github.com/alorman/4Runner-Seat-Heat-Code) for full details. 
+
+The main interesting part of this code was using a low-rate PWM. The MOSFET was being switched to fast to fully avalanche and thus was causing the MOSFET resistance to be far too high to enter into an overheat cycle. Since there is significant thermal inertia in the heaters and seats themselves, a _much_ slower PWM rate will allow the MOSFET to fully avalanche without exploding. For extra bonus points, the heaters themselves really become higher resistance as they heat up, so they are, in a way, self regulating at full power.  
+I used the `GlobalPWMFreq` directive to limit the frequency.   
+In the global definitions I put:  
+```
+int GlobalPWMFreq = 1000;
+```
+
 
 ## Seat Heaters
 
